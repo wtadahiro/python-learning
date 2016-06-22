@@ -22,6 +22,10 @@ class TestBasicSyntaxes(unittest.TestCase):
         with self.assertRaises(Exception):
             target.fizzbuzz(0)
 
+    def test_square_list(self):
+        target = BasicSyntaxes()
+        self.assertEqual([1, 4], target.square_list([1, 2]))
+        self.assertEqual([100, 9], target.square_list([10, -3]))
 
 if __name__ == '__main__':
     unittest.main()

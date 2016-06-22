@@ -17,3 +17,11 @@ class BasicSyntaxes:
             return 'fizz'
         else:
             return None
+
+    def square_list(self, in_list):
+        out_list = []
+        for val in in_list:
+            out_list.append(val**2)
+        return out_list
+
+
